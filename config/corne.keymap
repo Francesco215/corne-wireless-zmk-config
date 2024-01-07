@@ -14,12 +14,7 @@
 
         numpad {
             bindings = <&mo 3>;
-            key-positions = <16 17>;
-        };
-
-        function_numpad {
-            bindings = <&mo 4>;
-            key-positions = <15 16 17>;
+            key-positions = <15 16>;
         };
     };
 
@@ -74,12 +69,12 @@
             >;
         };
 
-        layer_3 {
+        numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp N2  &kp N3  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N4        &kp N5  &kp N6  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N7        &kp N8  &kp N9  &trans  &trans  &trans
-                        &trans  &mo 4   &trans    &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp N2  &kp N3  &kp PLUS   &kp ASTERISK  &kp LS(CARET)
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N4        &kp N5  &kp N6  &kp MINUS  &kp FSLH      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N7        &kp N8  &kp N9  &kp EQUAL  &kp DOT       &trans
+                        &trans  &mo 4   &trans    &trans        &kp N0  &trans
             >;
         };
 
