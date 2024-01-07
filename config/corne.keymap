@@ -11,11 +11,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        numpad {
-            bindings = <&mo 3>;
-            key-positions = <15 16>;
-        };
     };
 
     keymap {
