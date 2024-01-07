@@ -9,6 +9,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        numpad {
+            bindings = <&mo 3>;
+            key-positions = <15 16>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -57,6 +66,15 @@
 &kp LCTRL  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                              &kp LGUI  &trans    &kp BSPC     &kp SPACE  &trans     &kp RALT
+            >;
+        };
+
+        numpad {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N1  &kp N2  &kp N3  &kp PLUS       &kp STAR      &kp LS(CARET)
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5  &kp N6  &kp MINUS      &kp LS(FSLH)  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N7  &kp N8  &kp N9  &kp LS(EQUAL)  &kp DOT       &trans
+                        &trans  &trans  &trans    &trans  &kp N0  &trans
             >;
         };
     };
